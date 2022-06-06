@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/Prubadejs.css">
+    <script src="/JavaScript/Prueba_de_Js.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Preparacion</title>
+    <script>
+    </script>
+</head>
+
+<body id="bodyIndex">
+    <div class="d-flex flex-column align-items-center w-100 h-100">
+        <h1 class="fs-1">Preparando tu Coctel</h1>
+        <a href="/Htmls/Prueba_de_Js.html" class="btn btn-dark">Inicio</a>
+        <div class="d-flex flex-column" id="secciones">
+            <div class="d-flex flex-column d-none align-items-center" id="seccionNegroni">
+                <img src="/Htmls/Imagenes/Negroni2.gif" class="w-50 h-50" alt="Coteles a preparar">
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Gin</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('gin_seccionNegroni')">+</span>
+                    <input id="gin_seccionNegroni" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('gin_seccionNegroni')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Onzas</span>
+                </div>
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Campari</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('campari_seccionNegroni')">+</span>
+                    <input id="campari_seccionNegroni" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('campari_seccionNegroni')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Onzas</span>
+                </div>
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Vermu</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('vermu_seccionNegroni')">+</span>
+                    <input id="vermu_seccionNegroni" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('vermu_seccionNegroni')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Onzas</span>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column d-none" id="seccionBoulebardier">
+                <img src="/Htmls/Imagenes/Boulebardier2.gif" alt="">
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Whisky</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('whisky_seccionBoulebardier')">+</span>
+                    <input id="whisky_seccionBoulebardier" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('whisky_seccionBoulebardier')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Onzas</span>
+                </div>
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Campari</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('campari_seccionBoulebardier')">+</span>
+                    <input id="campari_seccionBoulebardier" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('campari_seccionBoulebardier')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Onzas</span>
+                </div>
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Vermu</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('vermu_seccionBoulebardier')">+</span>
+                    <input id="vermu_seccionBoulebardier" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('vermu_seccionBoulebardier')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Onzas</span>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column d-none" id="seccionOldFashioned">
+                <img src="/Htmls/Imagenes/Old Fashioned2.gif" alt="">
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Whisky</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('whisky_seccionOldFashioned')">+</span>
+                    <input id="whisky_seccionOldFashioned" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('whisky_seccionOldFashioned')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Onzas</span>
+                </div>
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Angostura</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('angostura_seccionOldFashioned')">+</span>
+                    <input id="angostura_seccionOldFashioned" type="text" value="4" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('angostura_seccionOldFashioned')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Gotas</span>
+                </div>
+                <div class="input-group p-3">
+                    <span class="bg-dark text-warning input-group-text">Azucar</span>
+                    <span class="bg-dark text-warning mas input-group-text" onclick="sumar('azucar_seccionOldFashioned')">+</span>
+                    <input id="azucar_seccionOldFashioned" type="text" value="2" readonly>
+                    <span class="bg-dark text-warning menos input-group-text" onclick="restar('azucar_seccionOldFashioned')">-</span>
+                    <span class="bg-dark text-warning input-group-text">Bpst</span>
+                </div>
+            </div>
+        </div>
+        <div id="btnListo">
+            <button onclick="mostrar_img()" class="btn btn-dark">Listortiii</button>
+        </div>
+        <img id="imgVaso" class="d-none" src="/Htmls/Imagenes/perroCoctel.gif" alt="perro cocteleando">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+</html>
